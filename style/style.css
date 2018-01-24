@@ -1,0 +1,1010 @@
+@charset "UTF-8";
+@keyframes menu-5 {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    -webkit-transform: scale(0); }
+  50% {
+    opacity: 1; }
+  90% {
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transform: scale(1.1); }
+  100% {
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 1; } }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif; }
+
+body {
+  font-size: 14px;
+  color: #000;
+  min-width: 1200px;
+  background: #fff;
+  position: relative; }
+
+img {
+  border: none;
+  max-width: 100%; }
+
+ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0; }
+
+input,
+textarea,
+select {
+  font-family: "微软雅黑";
+  outline: none; }
+
+a {
+  text-decoration: none;
+  color: #666;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+a:hover {
+  color: #e96812;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
+.clear {
+  clear: both; }
+
+.float_l {
+  float: left; }
+
+.float_r {
+  float: right; }
+
+/**header***/
+.header {
+  position: relative; }
+  .header .hdr {
+    padding-top: 32px;
+    float: right;
+    width: 210px;
+    color: #900003;
+    font-size: 24px;
+    font-weight: bold;
+    background: url(../images/phone.png) no-repeat left center;
+    padding-left: 70px;
+    height: 92px; }
+  .header .logo {
+    float: left;
+    width: 600px; }
+    .header .logo a {
+      padding: 28px 0;
+      display: block; }
+    .header .logo img {
+      float: left; }
+    .header .logo .lor {
+      margin-top: 5px;
+      float: left;
+      color: #333333;
+      border-left: 2px solid #bbbbbb;
+      font-size: 18px;
+      margin-left: 10px;
+      padding-left: 10px;
+      line-height: 30px; }
+
+.naver {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background: url(../images/bg.png); }
+  .naver li {
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    float: left;
+    margin-right: 118px;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+    .naver li a {
+      text-align: center;
+      color: #fff;
+      font-size: 16px;
+      display: block; }
+    .naver li .line {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -20px;
+      width: 0;
+      height: 2px;
+      background: #fff;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+    .naver li:hover {
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      .naver li:hover .xiala {
+        display: block; }
+      .naver li:hover .line {
+        width: 40px; }
+    .naver li.act {
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      .naver li.act .line {
+        width: 40px !important; }
+
+.xiala {
+  display: none;
+  position: absolute;
+  top: 50px;
+  width: 120px;
+  left: 50%;
+  margin-left: -60px;
+  z-index: 999999; }
+
+.xiala a {
+  display: block;
+  font-size: 14px !important;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background: #900003; }
+  .xiala a:hover {
+    background: #ab0c0f; }
+  
+
+.nav li:hover .xiala {
+  display: block; }
+
+@keyframes menu-5 {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    -webkit-transform: scale(0); }
+  50% {
+    opacity: 1; }
+  90% {
+    transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transform: scale(1.1); }
+  100% {
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 1; } }
+.cebian {
+  position: fixed;
+  right: 50%;
+  bottom: 50px;
+  z-index: 9999;
+  margin-right: -660px; }
+  .cebian li {
+    position: relative;
+    margin-bottom: 6px;
+    cursor: pointer; }
+    .cebian li a {
+      display: block; }
+  .cebian .li1 {
+    width: 50px;
+    height: 50px;
+    background: url(../images/icon12.png) no-repeat center center;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+    .cebian .li1 .ewm {
+      position: absolute;
+      right: 60px;
+      top: 0;
+      width: 120px;
+      height: 120px;
+      display: none; }
+    .cebian .li1:hover {
+      background: url(../images/icon12_1.png) no-repeat center center;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      .cebian .li1:hover .ewm {
+        display: block; }
+  .cebian .li2 {
+    width: 50px;
+    height: 50px;
+    background: url(../images/icon13.png) no-repeat center center;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+    .cebian .li2:hover {
+      background: url(../images/icon13_1.png) no-repeat center center;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+  .cebian .fanhui {
+    width: 50px;
+    height: 50px;
+    background: url(../images/icon14.png) no-repeat center center;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+    .cebian .fanhui:hover {
+      background: url(../images/icon14_1.png) no-repeat center center;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+
+/**footer**/
+.footer .fottop {
+  padding: 30px 0;
+  background: #222222; }
+  .footer .fottop ul {
+    margin-left: -20px; }
+  .footer .fottop li {
+    border-right: 1px solid #fff;
+    height: 15px;
+    line-height: 15px;
+    float: left; }
+    .footer .fottop li:hover a {
+      color: #fff; }
+    .footer .fottop li a {
+      padding: 0 20px;
+      display: block;
+      color: #cccccc;
+      font-size: 14px; }
+  .footer .fottop .con {
+    margin-top: 10px;
+    color: #cccccc;
+    font-size: 14px;
+    line-height: 24px; }
+.footer .fotbot {
+  height: 35px;
+  line-height: 35px;
+  overflow: hidden;
+  background: #3c0001; }
+  .footer .fotbot .fotbl {
+    float: left;
+    width: 600px;
+    color: #cccccc;
+    font-size: 12px; }
+    .footer .fotbot .fotbl img {
+      margin-right: 5px;
+      position: relative;
+      top: 5px; }
+    .footer .fotbot .fotbl a {
+      color: #cccccc;
+      font-size: 12px;
+      display: inline-block;
+      margin-right: 5px; }
+      .footer .fotbot .fotbl a:hover {
+        color: #fff; }
+  .footer .fotbot .fotbr {
+    float: right;
+    width: 600px;
+    text-align: right; }
+    .footer .fotbot .fotbr a {
+      display: inline-block;
+      color: #cccccc;
+      font-size: 12px;
+      margin-left: 10px; }
+      .footer .fotbot .fotbr a:hover {
+        color: #fff; }
+
+.banner {
+  width: 100%;
+  overflow: hidden;
+  position: relative; }
+  .banner .swiper-slide img {
+    display: block; }
+  .banner .swiper-pagination {
+    text-align: center;
+    bottom: 25px;
+    width: 100%;
+    left: 0; }
+  .banner .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    margin: 0 5px;
+    opacity: 1;
+    border-radius: 50%; }
+  .banner .swiper-pagination-bullet-active {
+    background: #900003; }
+
+.part1 {
+  padding: 45px 0;
+  text-align: center; }
+  .part1 .pa1box {
+    width: 255px;
+    margin: 0 20px;
+    display: inline-block;
+    padding: 30px 20px 5px 20px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+    .part1 .pa1box:hover {
+      text-align: center;
+      background: #f5f5f5;
+      box-shadow: 0px 5px 10px #e8e8e8;
+      border-radius: 4px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+      -webkit-transform: translateY(-10px);
+      -moz-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      -o-transform: translateY(-10px);
+      transform: translateY(-10px); }
+      .part1 .pa1box:hover .pa1b {
+        background: url(../images/icon1_1.png) no-repeat top center; }
+        .part1 .pa1box:hover .pa1b i {
+          color: #d30004; }
+    .part1 .pa1box a {
+      display: inline-block;
+      text-align: center; }
+    .part1 .pa1box .pa1b {
+      position: relative;
+      color: #fff;
+      background: url(../images/icon1.png) no-repeat top center;
+      width: 200px;
+      height: 184px;
+      padding-top: 50px;
+      color: #fff;
+      font-size: 16px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      .part1 .pa1box .pa1b i {
+        position: absolute;
+        top: -12px;
+        left: 46%;
+        font-size: 24px;
+        font-style: normal;
+        color: #cc9b26;
+        font-weight: bold;
+        text-transform: uppercase; }
+      .part1 .pa1box .pa1b img {
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 5px; }
+
+.title {
+  padding: 30px 0;
+  text-align: center; }
+  .title b {
+    color: #900003;
+    font-size: 24px;
+    display: block;
+    font-weight: normal;
+    text-transform: uppercase; }
+  .title .tt {
+    color: #900003;
+    font-size: 18px;
+    font-weight: bold; }
+    .title .tt span {
+      width: 100px;
+      height: 1px;
+      background: #900003;
+      display: inline-block;
+      margin: 0 20px;
+      position: relative;
+      top: -5px; }
+
+.part2 .pa2con .pa2l {
+  float: left;
+  width: 50%;
+  height: 320px;
+  background: url(../images/img1.jpg) no-repeat right top; }
+  .part2 .pa2con .pa2l .pa2lcon {
+    width: 600px;
+    float: right;
+    position: relative;
+    height: 320px; }
+    .part2 .pa2con .pa2l .pa2lcon .ab {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 115px;
+      height: 185px;
+      padding-top: 25px;
+      padding-left: 15px;
+      color: #fff;
+      font-size: 20px;
+      text-transform: uppercase;
+      background: url(../images/icon5.png); }
+      .part2 .pa2con .pa2l .pa2lcon .ab span {
+        margin-top: 8px;
+        padding-left: 10px;
+        font-size: 14px;
+        display: block;
+        border-left: 2px solid #fff; }
+    .part2 .pa2con .pa2l .pa2lcon a {
+      display: block;
+      color: #900003;
+      font-size: 18px;
+      border: 1px solid #900003;
+      background: #fff;
+      width: 100px;
+      height: 28px;
+      text-align: center;
+      line-height: 28px;
+      text-transform: uppercase;
+      position: absolute;
+      right: -50px;
+      bottom: 20px; }
+      .part2 .pa2con .pa2l .pa2lcon a:hover {
+        color: #fff;
+        background: #900003;
+        border: 1px solid #fff; }
+.part2 .pa2con .pa2r {
+  float: right;
+  width: 50%;
+  height: 320px; }
+  .part2 .pa2con .pa2r .pa2rcon {
+    padding: 20px;
+    width: 560px;
+    float: left;
+    color: #666666;
+    font-size: 16px;
+    line-height: 30px; }
+
+.part3 .pa3l {
+  width: 560px;
+  float: left; }
+  .part3 .pa3l .title {
+    text-align: left; }
+  .part3 .pa3l .pa3lcon {
+    position: relative;
+    overflow: hidden;
+    width: 560px;
+    height: 443px; }
+    .part3 .pa3l .pa3lcon:hover .yin {
+      top: 0;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+    .part3 .pa3l .pa3lcon:hover .tit {
+      bottom: -100%;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+    .part3 .pa3l .pa3lcon a {
+      display: block;
+      box-shadow: 0px 5px 10px #eee; }
+    .part3 .pa3l .pa3lcon .tit {
+      position: absolute;
+      left: 0;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      font-size: 16px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+    .part3 .pa3l .pa3lcon .yin {
+      position: absolute;
+      top: -100%;
+      left: 0;
+      width: 560px;
+      height: 443px;
+      background: url(../images/icon8.png);
+      z-index: 99;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      .part3 .pa3l .pa3lcon .yin .yinc {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 560px;
+        height: 100%;
+        text-align: center;
+        background: url(../images/icon7.png) no-repeat center center; }
+      .part3 .pa3l .pa3lcon .yin .yi {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 560px;
+        height: 100%;
+        text-align: center;
+        background: url(../images/icon6.png) no-repeat center center; }
+      .part3 .pa3l .pa3lcon .yin .tt {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 50px; }
+        .part3 .pa3l .pa3lcon .yin .tt h3 {
+          color: #fff;
+          font-size: 23px;
+          font-weight: normal; }
+        .part3 .pa3l .pa3lcon .yin .tt .con {
+          margin-top: 10px;
+          color: #fff;
+          font-size: 14px;
+          line-height: 25px; }
+.part3 .pa3r {
+  float: right;
+  width: 640px;
+  padding-top: 42px; }
+  .part3 .pa3r li {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 238px;
+    margin-top: 20px;
+    margin-left: 20px; }
+    .part3 .pa3r li:hover .yin {
+      top: 0;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+    .part3 .pa3r li:hover .tit {
+      bottom: -100%;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+    .part3 .pa3r li a {
+      display: block;
+      box-shadow: 0px 5px 10px #eee; }
+    .part3 .pa3r li .tit {
+      position: absolute;
+      left: 0;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      font-size: 18px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+    .part3 .pa3r li .yin {
+      position: absolute;
+      top: -100%;
+      left: 0;
+      width: 300px;
+      height: 238px;
+      background: url(../images/icon8.png);
+      z-index: 99;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      .part3 .pa3r li .yin .yinc {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        text-align: center;
+        background: url(../images/icon7.png) no-repeat center center;
+        background-size: 92%; }
+      .part3 .pa3r li .yin .yi {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        text-align: center;
+        background: url(../images/icon6.png) no-repeat center center; }
+      .part3 .pa3r li .yin .tt {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 20px; }
+        .part3 .pa3r li .yin .tt h3 {
+          color: #fff;
+          font-size: 18px;
+          font-weight: normal; }
+        .part3 .pa3r li .yin .tt .con {
+          margin-top: 10px;
+          color: #fff;
+          font-size: 14px;
+          line-height: 25px; }
+
+.part4 {
+  margin-top: 20px; }
+  .part4 .pa4con {
+    background: url(../images/bg.jpg) no-repeat center top;
+    height: 560px; }
+    .part4 .pa4con .container {
+      position: relative; }
+    .part4 .pa4con .swiper-button-prev {
+      left: -50px;
+      width: 30px;
+      height: 57px;
+      background: url(../images/left1.png) no-repeat center center;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      .part4 .pa4con .swiper-button-prev:hover {
+        background: url(../images/left.png) no-repeat center center;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
+    .part4 .pa4con .swiper-button-next {
+      right: -50px;
+      width: 30px;
+      height: 57px;
+      background: url(../images/right1.png) no-repeat center center;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      .part4 .pa4con .swiper-button-next:hover {
+        background: url(../images/right.png) no-repeat center center;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
+    .part4 .pa4con .p4box {
+      position: relative; }
+      .part4 .pa4con .p4box a {
+        display: block; }
+      .part4 .pa4con .p4box .box {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -210px;
+        text-align: center;
+        width: 420px;
+        height: 100px;
+        padding: 15px 0;
+        background: url(../images/icon9.png);
+        box-shadow: 0px 2px 2px #eee; }
+        .part4 .pa4con .p4box .box .tt {
+          color: #900003;
+          font-size: 18px;
+          font-weight: bold; }
+          .part4 .pa4con .p4box .box .tt span {
+            display: inline-block;
+            background: #900003;
+            height: 2px;
+            width: 20px;
+            margin: 0 10px;
+            position: relative;
+            top: -6px; }
+        .part4 .pa4con .p4box .box .con {
+          color: #000000;
+          font-size: 15px;
+          min-height: 35px;
+          margin-top: 10px; }
+        .part4 .pa4con .p4box .box .lj {
+          margin: 0 auto;
+          width: 115px;
+          padding-left: 15px;
+          height: 30px;
+          line-height: 30px;
+          background: #9b9b9b;
+          border-radius: 40px;
+          color: #fff;
+          font-size: 14px;
+          text-align: left;
+          position: relative;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -ms-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s; }
+          .part4 .pa4con .p4box .box .lj:hover {
+            background: #920508;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s; }
+            .part4 .pa4con .p4box .box .lj:hover span {
+              background: #9b9b9b url(../images/icon10.png) no-repeat center center;
+              -webkit-transition: all 0.3s;
+              -moz-transition: all 0.3s;
+              -ms-transition: all 0.3s;
+              -o-transition: all 0.3s;
+              transition: all 0.3s; }
+          .part4 .pa4con .p4box .box .lj span {
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: inline-block;
+            width: 40px;
+            height: 30px;
+            border-radius: 40px;
+            background: #920508 url(../images/icon10.png) no-repeat center center;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s; }
+
+.part5 {
+  margin-bottom: 20px; }
+  .part5 .pa5con {
+    margin-top: 15px; }
+    .part5 .pa5con .pa5l {
+      padding: 0 20px;
+      width: 560px;
+      float: left; }
+      .part5 .pa5con .pa5l:hover .tt {
+        color: #900003; }
+        .part5 .pa5con .pa5l:hover .tt i {
+          color: #900003; }
+      .part5 .pa5con .pa5l a {
+        display: block; }
+      .part5 .pa5con .pa5l .line {
+        width: 25px;
+        height: 2px;
+        background: #999999;
+        margin-bottom: 10px; }
+      .part5 .pa5con .pa5l .tt {
+        color: #333;
+        font-size: 18px; }
+        .part5 .pa5con .pa5l .tt i {
+          font-style: normal;
+          color: #999; }
+        .part5 .pa5con .pa5l .tt span {
+          float: right;
+          color: #666666;
+          font-size: 14px; }
+      .part5 .pa5con .pa5l .con {
+        margin-top: 10px;
+        color: #666666;
+        font-size: 14px;
+        line-height: 23px; }
+      .part5 .pa5con .pa5l .more {
+        margin-top: 15px;
+        width: 60px;
+        height: 28px;
+        border: 1px solid #cdcdcd;
+        border-radius: 40px;
+        background: url(../images/icon11.png) no-repeat center center;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
+        .part5 .pa5con .pa5l .more:hover {
+          border: 1px solid #900003;
+          background: #900003 url(../images/icon10.png) no-repeat center center;
+          box-shadow: 0px 3px 3px #eee;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -ms-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s; }
+
+.part6 {
+  position: relative;
+  padding-bottom: 70px; }
+  .part6 .bg {
+    position: absolute;
+    bottom: 0;
+    height: 308px;
+    width: 100%;
+    z-index: 99;
+    background: url(../images/bg2.jpg) no-repeat bottom center; }
+  .part6 .pa6con {
+    position: relative;
+    z-index: 9999; }
+    .part6 .pa6con .swiper-button-prev {
+      left: -50px;
+      width: 50px;
+      height: 50px;
+      margin-top: 22px;
+      background: url(../images/left2.png) no-repeat center center;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      .part6 .pa6con .swiper-button-prev:hover {
+        background: url(../images/left2_1.png) no-repeat center center;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
+    .part6 .pa6con .swiper-button-next {
+      right: -50px;
+      width: 50px;
+      height: 50px;
+      margin-top: 22px;
+      background: url(../images/right2.png) no-repeat center center;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      .part6 .pa6con .swiper-button-next:hover {
+        background: url(../images/right2_1.png) no-repeat center center;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
+    .part6 .pa6con .p6box {
+      padding: 0 13px; }
+      .part6 .pa6con .p6box:hover .p6bt img {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
+      .part6 .pa6con .p6box a {
+        display: block;
+        text-align: center; }
+      .part6 .pa6con .p6box .p6bt {
+        width: 370px;
+        height: 370px;
+        overflow: hidden;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
+        .part6 .pa6con .p6box .p6bt img {
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -ms-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s; }
+      .part6 .pa6con .p6box .p6bb {
+        padding: 35px 20px;
+        background: #fff;
+        width: 330px; }
+        .part6 .pa6con .p6box .p6bb h3 {
+          color: #333333;
+          font-size: 24px;
+          font-weight: normal; }
+        .part6 .pa6con .p6box .p6bb .con {
+          margin-top: 15px;
+          color: #555555;
+          font-size: 14px;
+          line-height: 24px;
+          min-height: 55px; }
+        .part6 .pa6con .p6box .p6bb .more {
+          width: 60px;
+          height: 28px;
+          margin: 0 auto;
+          border: 1px solid #cdcdcd;
+          border-radius: 40px;
+          background: url(../images/icon11.png) no-repeat center center;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -ms-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s; }
+          .part6 .pa6con .p6box .p6bb .more:hover {
+            border: 1px solid #900003;
+            background: #900003 url(../images/icon10.png) no-repeat center center;
+            box-shadow: 0px 3px 3px #eee;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s; }
+
+.part7 {
+  margin-bottom: 30px; }
+  .part7 .pa7con ul {
+    width: 1220px; }
+  .part7 .pa7con li {
+    width: 131px;
+    height: 88px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    float: left;
+    padding-bottom: 10px;
+    background: url(../images/bg1.jpg) no-repeat center bottom;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+    .part7 .pa7con li:hover {
+      -webkit-transform: translateY(-10px);
+      -moz-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      -o-transform: translateY(-10px);
+      transform: translateY(-10px);
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+    .part7 .pa7con li a {
+      display: block;
+      border: 1px solid #f0f0f0;
+      border-bottom: none; }
+
