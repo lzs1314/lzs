@@ -573,7 +573,7 @@
 "media_total": "7"
 },
 {
-"id": "1000","
+"id": "1000",
 "name": "Retrofit网络库",
 "pic": "5b289bbe0001fc4906000338",
 "cat_id": "11",
@@ -950,7 +950,7 @@
 "short_description": "介绍APP中刷新和加载数据的解决方案，以及PullToRefresh框架如何使用",
 "description": "APP中刷新和加载数据的解决方案，以及PullToRefresh框架的使用",
 "extra": null,
-"hits: "0",
+"hits": "0",
 "istop": "0",
 "top_time": "0",
 "precondition": "学习PullToRefresh框架之前，需有Android的基础知识",
