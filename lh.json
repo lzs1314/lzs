@@ -75,10 +75,10 @@
 "numbers": 627,
 "update_time": "1531786809",
 "company_id": "0",
-"company_courseid: "0",
-"easy_type: "3",
-"teach_type: "2",
-"course_type: "2",
+"company_courseid": "0",
+"easy_type": "3",
+"teach_typ": "2",
+"course_type": "2",
 "keyword": null,
 "finished": "0",
 "uid": "4558933",
@@ -157,5 +157,5 @@
 "media_total": "8"
 }
 ],
-nextPage: 1
+"nextPage": 1
 }
