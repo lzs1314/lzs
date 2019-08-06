@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>雪花</title>
+<script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+<style>
+body{margin: 0;padding: 0;background: #000;}
+#myCanvas{
+	position: fixed;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+}
+</style>
+
+<script type="text/javascript">
+$(function(){	
+	function start(){
+		var imgs = [];
+		var srcs = ['1.png','2.png','3.png'];//同源策略限制只能加载本地图片
+		srcs.forEach(function(value,index,array){
+			var img = new Image();
+			img.onload = function(){
+				imgs.push(this);
+				if(imgs.length == srcs.length){
+					imgs = imgs.filter(function(value){
+						return !!value;
+					});
+					if(imgs.length != srcs.length){
+						console.log('图片加载异常');
+					}else{
+						init(imgs);
+					}
+				}
+			}
+			img.onerror = function(){
+				imgs.push(null);
+				if(imgs.length == srcs.length){
+					console.log('图片加载异常');
+				}
+			}
+			img.src = value;
+		});
+	}
+	function init(imgs){
+		var c = document.getElementById("myCanvas");
+		var cxt = c.getContext("2d");
+		var height = $(window).height();
+		var width = $(window).width();
+		c.width = width;
+		c.height = height;
+		var rank = 5;//轨道数量
+		var snowflake = [];//雪花	
+		var matrix = [];//雪花矩阵
+		var fps = 50;//帧数 最大100帧
+		var speed = 50;//雪花移动速度px/s 最大100px/s
+		var density = 1;//雪花密集度 必须大于0
+		setInterval(function(){//生成雪花 
+			snowflake = create(c,imgs,rank);//[img,x,y,path,scale]
+			matrix.push(snowflake);
+		},1000/speed/density);
+		setInterval(function(){//雪花飘落
+			for(var i = 0; i < matrix.length; i++){
+				matrix[i][1] += matrix[i][3]/100*speed;
+				matrix[i][2] += (rank-matrix[i][3])/100*speed;
+			}
+			matrix = matrix.filter(function(value){
+				return value[1] < c.width && value[2] < c.height;
+			});
+		},10);
+		setInterval(function(){//绘画
+			draw(c,cxt,matrix);
+		},1000/fps);
+	}
+	function create(c,imgs,rank){
+		var img = imgs[(Math.random()*3)>>0], scale = Math.random()*0.5+0.5, left = (Math.random()*c.width/3*2)>>0, top = -img.height*scale, path = (Math.random()*rank)-0.5;
+		return [img,left,top,path,scale];
+	}
+	function draw(c,cxt,matrix){
+		cxt.clearRect(0,0,c.width,c.height);
+		for(var i = 0; i < matrix.length; i++){
+			cxt.drawImage(matrix[i][0],matrix[i][1],matrix[i][2],matrix[i][0].width*matrix[i][4],matrix[i][0].height*matrix[i][4]);
+		}
+	}
+	start();
+});
+</script>
+
+</head>
+<body>
+	<canvas id="myCanvas"></canvas>
+</body>
+</html>
